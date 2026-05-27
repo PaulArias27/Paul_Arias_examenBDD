@@ -1,0 +1,126 @@
+{
+  "info": {
+    "_postman_id": "d46fa3f5-5e29-4b8b-81d9-51338426ae49",
+    "name": "Vuelos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "38492440"
+  },
+  "item": [
+    {
+      "name": "agregarVuelo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"codigo\":\"LA-999\",\r\n    \"precioBoleto\":500,\r\n    \"asientosDisponibles\":20\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/vuelos",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listar todos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/vuelos",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listar por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/vuelos/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "actualizar",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"codigo\":\"LA-999\",\r\n    \"precioBoleto\":500,\r\n    \"asientosDisponibles\":20,\r\n    \"destino\":\"china\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/vuelos/21",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos",
+            "21"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "eliminar vuelo",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/vuelos/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vuelos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
