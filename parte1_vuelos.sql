@@ -31,6 +31,8 @@ VALUES
 ('SQ-121',880,2,'Singapur'),
 ('CX-131',640,14,'Hong Kong');
 
+SELECT * FROM vuelos;
+
 SELECT *FROM vuelos WHERE asientos_disponibles < 5;
 
 UPDATE vuelos SET precio_boleto = precio_boleto * 1.15
